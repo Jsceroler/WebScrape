@@ -1,0 +1,15 @@
+<div class="container">
+    {{#if result}}
+        {{#each result}}
+            <div class="card" style="width: 18rem;">
+            <video src={{video}} class="card-img-top" alt={{image}}>
+            <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <a href={{link}} class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <button id="scrape"><a href='/scrape'>Click for articles</a></button>
+    {{/if}}
+</div>
